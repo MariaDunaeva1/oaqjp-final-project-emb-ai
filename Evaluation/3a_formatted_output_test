@@ -1,0 +1,9 @@
+from EmotionDetection.emotion_detection import emotion_detector
+>>> emotion_detector("I hate working long hours.")
+{'emotionPredictions': [{'emotion': {'anger': 0.64999825, 'disgust': 0.03349073, 'fear': 0.05567236, 'joy': 0.008661813, 'sadness': 0.19678932}, 'target': '', 'emotionMentions': [{'span': {'begin': 0, 'end': 26, 'text': 'I hate working long hours.'}, 'emotion': {'anger': 0.64999825, 'disgust': 0.03349073, 'fear': 0.05567236, 'joy': 0.008661813, 'sadness': 0.19678932}}]}], 'producerId': {'name': 'Ensemble Aggregated Emotion Workflow', 'version': '0.0.1'}}
+{'anger': 0.64999825, 'disgust': 0.03349073, 'fear': 0.05567236, 'joy': 0.008661813, 'sadness': 0.19678932, 'dominant_emotion': 'anger'}
+>>> emotion_detector("I am so happy I am doing this")
+{'emotionPredictions': [{'emotion': {'anger': 0.0043079085, 'disgust': 0.00041127237, 'fear': 0.0037504788, 'joy': 0.9918804, 'sadness': 0.014091322}, 'target': '', 'emotionMentions': [{'span': {'begin': 0, 'end': 29, 'text': 'I am so happy I am doing this'}, 'emotion': {'anger': 0.0043079085, 'disgust': 0.00041127237, 'fear': 0.0037504788, 'joy': 0.9918804, 'sadness': 0.014091322}}]}], 'producerId': {'name': 'Ensemble Aggregated Emotion Workflow', 'version': '0.0.1'}}
+{'anger': 0.0043079085, 'disgust': 0.00041127237, 'fear': 0.0037504788, 'joy': 0.9918804, 'sadness': 0.014091322, 'dominant_emotion': 'joy'}
+>>> 
+[2]+  Stopped                 python3
